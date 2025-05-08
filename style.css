@@ -9,6 +9,11 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
 form {
   width: 100%;
   display: flex;
@@ -24,6 +29,8 @@ form {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 35%;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .form-fields {
@@ -42,6 +49,7 @@ form {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 20px;
+  border-radius: 5px;
 }
 .form-fields label,
 .form-fields span {
@@ -83,9 +91,11 @@ form {
   outline: none;
   border: none;
   font-weight: bold;
+  border-radius: 5px;
 }
 .cancel-btn {
   background-color: red;
   color: #fff;
   border: none;
+  border-radius: 5px;
 }
