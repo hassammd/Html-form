@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form_outer {
+  border: 1px solid;
+  padding: 50px;
+  width: 50%;
+  /* margin: 0 auto; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: 44% 54%;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.form-title {
+  width: 100%;
+  background-color: #7fd9ff;
+  text-align: center;
+  padding: 10px 0px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.form-fields label,
+.form-fields span {
+  font-weight: bold;
+}
+.form-fields select,
+.form-fields input[type="text"],
+.form-fields input[type="email"],
+.form-fields option {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #c9c4c4;
+}
+.form-bio-sec,
+.form-personal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-radio-button {
+  display: flex;
+  gap: 10px;
+}
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.submit-btn button {
+  width: 20%;
+  padding: 10px 20px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.submit-btn button[type="submit"] {
+  background-color: #7fd9ff;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+.cancel-btn {
+  background-color: red;
+  color: #fff;
+  border: none;
+}
